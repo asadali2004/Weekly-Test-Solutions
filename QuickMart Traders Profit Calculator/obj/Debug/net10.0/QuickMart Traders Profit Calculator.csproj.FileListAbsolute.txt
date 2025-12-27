@@ -1,0 +1,14 @@
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\bin\Debug\net10.0\QuickMart Traders Profit Calculator.exe
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\bin\Debug\net10.0\QuickMart Traders Profit Calculator.deps.json
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\bin\Debug\net10.0\QuickMart Traders Profit Calculator.runtimeconfig.json
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\bin\Debug\net10.0\QuickMart Traders Profit Calculator.dll
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\bin\Debug\net10.0\QuickMart Traders Profit Calculator.pdb
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.AssemblyInfoInputs.cache
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.AssemblyInfo.cs
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.csproj.CoreCompileInputs.cache
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.dll
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\refint\QuickMart Traders Profit Calculator.dll
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.pdb
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\QuickMart Traders Profit Calculator.genruntimeconfig.cache
+C:\Users\alias\source\repos\QuickMart Traders Profit Calculator\obj\Debug\net10.0\ref\QuickMart Traders Profit Calculator.dll

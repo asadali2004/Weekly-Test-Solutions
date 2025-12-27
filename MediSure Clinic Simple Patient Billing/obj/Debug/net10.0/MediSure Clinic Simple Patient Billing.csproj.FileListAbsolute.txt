@@ -1,0 +1,14 @@
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\bin\Debug\net10.0\MediSure Clinic Simple Patient Billing.exe
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\bin\Debug\net10.0\MediSure Clinic Simple Patient Billing.deps.json
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\bin\Debug\net10.0\MediSure Clinic Simple Patient Billing.runtimeconfig.json
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\bin\Debug\net10.0\MediSure Clinic Simple Patient Billing.dll
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\bin\Debug\net10.0\MediSure Clinic Simple Patient Billing.pdb
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.AssemblyInfoInputs.cache
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.AssemblyInfo.cs
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.csproj.CoreCompileInputs.cache
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.dll
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\refint\MediSure Clinic Simple Patient Billing.dll
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.pdb
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\MediSure Clinic Simple Patient Billing.genruntimeconfig.cache
+C:\Users\alias\source\repos\MediSure Clinic Simple Patient Billing\obj\Debug\net10.0\ref\MediSure Clinic Simple Patient Billing.dll
