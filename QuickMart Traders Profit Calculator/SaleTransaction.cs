@@ -64,6 +64,7 @@ namespace QuickMart_Traders_Profit_Calculator
         /// message and terminate without creating a transaction.</remarks>
         public static void CreateTransaction()
         {
+            // Taking Input from User for Invoice No
             Console.Write("Enter Invoice No: ");
             string invoiceNo = Console.ReadLine();
 
@@ -73,12 +74,15 @@ namespace QuickMart_Traders_Profit_Calculator
                 return;
             }
 
+            // Taking Input from User for Customer Name
             Console.Write("Enter Customer Name: ");
             string customerName = Console.ReadLine();
 
+            // Taking Input from User for Item Name
             Console.Write("Enter Item Name: ");
             string itemName = Console.ReadLine();
 
+            // Taking Input from User for Quantity
             Console.Write("Enter Quantity: ");
             if (!int.TryParse(Console.ReadLine(), out int quantity) || quantity <= 0)
             {
@@ -86,6 +90,7 @@ namespace QuickMart_Traders_Profit_Calculator
                 return;
             }
 
+            // Taking Input from User for Purchase Amount
             Console.Write("Enter Purchase Amount (total): ");
             if (!decimal.TryParse(Console.ReadLine(), out decimal purchaseAmount) || purchaseAmount <= 0)
             {
@@ -93,6 +98,7 @@ namespace QuickMart_Traders_Profit_Calculator
                 return;
             }
 
+            // Taking Input from User for Selling Amount
             Console.Write("Enter Selling Amount (total): ");
             if (!decimal.TryParse(Console.ReadLine(), out decimal sellingAmount) || sellingAmount < 0)
             {
@@ -100,6 +106,7 @@ namespace QuickMart_Traders_Profit_Calculator
                 return;
             }
 
+            // Create transaction instance
             var transaction = new SaleTransaction
             {
                 InvoiceNo = invoiceNo.Trim(),
