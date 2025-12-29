@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediSure Clinic Simple Patient Billing", "MediSure Clinic Simple Patient Billing\MediSure Clinic Simple Patient Billing.csproj", "{D58925B2-3775-608C-81DC-79A1225DEC8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickMart Traders Profit Calculator", "QuickMart Traders Profit Calculator\QuickMart Traders Profit Calculator.csproj", "{E9B43FCE-2484-2A76-4A63-21014F4A108E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D58925B2-3775-608C-81DC-79A1225DEC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58925B2-3775-608C-81DC-79A1225DEC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58925B2-3775-608C-81DC-79A1225DEC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58925B2-3775-608C-81DC-79A1225DEC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B43FCE-2484-2A76-4A63-21014F4A108E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B43FCE-2484-2A76-4A63-21014F4A108E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B43FCE-2484-2A76-4A63-21014F4A108E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B43FCE-2484-2A76-4A63-21014F4A108E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EFF8C5-2491-48E8-988E-F43503FE7254}
+	EndGlobalSection
+EndGlobal

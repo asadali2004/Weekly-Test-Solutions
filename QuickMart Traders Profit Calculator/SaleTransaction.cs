@@ -37,28 +37,31 @@ namespace QuickMart_Traders_Profit_Calculator
         #endregion
 
         #region Properties
-
-        public string InvoiceNo { get; set; }
-        public string CustomerName { get; set; }
-        public string ItemName { get; set; }
-        public int Quantity { get; set; }
-        public decimal PurchaseAmount { get; set; }
-        public decimal SellingAmount { get; set; }
-        public string ProfitOrLossStatus { get; set; }
-        public decimal ProfitOrLossAmount { get; set; }
-        public decimal ProfitMarginPercent { get; set; }
-
+        public string InvoiceNo { get; set; } //InvoiceNo: Unique identifier for the transaction
+        public string CustomerName { get; set; } //CustomerName: Name of the customer involved in the transaction
+        public string ItemName { get; set; } //ItemName: Name of the item being sold
+        public int Quantity { get; set; } //Quantity: Number of items sold
+        public decimal PurchaseAmount { get; set; } //PurchaseAmount: Total cost price of the items
+        public decimal SellingAmount { get; set; } //SellingAmount: Total selling price of the items
+        public string ProfitOrLossStatus { get; set; } //ProfitOrLossStatus: Indicates if the transaction resulted in a PROFIT, LOSS, or BREAK-EVEN
+        public decimal ProfitOrLossAmount { get; set; } //ProfitOrLossAmount: The monetary amount of profit or loss from the transaction
+        public decimal ProfitMarginPercent { get; set; } //ProfitMarginPercent: The profit margin as a percentage of the purchase amount
         #endregion
 
         #region Static Storage
-
-        public static SaleTransaction LastTransaction;
-        public static bool HasLastTransaction = false;
-
+        public static SaleTransaction LastTransaction; //LastTransaction: Holds the most recent transaction
+        public static bool HasLastTransaction = false; //HasLastTransaction: Indicates if there is a last transaction stored
         #endregion
 
         #region Create/Register Method
-
+        /// <summary>
+        /// Creates a new sales transaction by prompting the user for invoice, customer, item, quantity, and amount
+        /// details, then calculates and displays the transaction summary including profit or loss information.
+        /// </summary>
+        /// <remarks>This method interacts with the console to collect transaction data and displays the
+        /// results immediately. The transaction details are stored for later retrieval. Input validation is performed
+        /// for required fields and numeric values; if invalid input is provided, the method will display an error
+        /// message and terminate without creating a transaction.</remarks>
         public static void CreateTransaction()
         {
             Console.Write("Enter Invoice No: ");
@@ -147,7 +150,13 @@ namespace QuickMart_Traders_Profit_Calculator
         #endregion
 
         #region View Transaction Method
-
+        /// <summary>
+        /// Displays the details of the most recent transaction in the console output.
+        /// </summary>
+        /// <remarks>If no transaction has been created, a message is displayed indicating that no
+        /// transaction is available. This method outputs transaction information such as invoice number, customer name,
+        /// item details, amounts, status, and profit margin. The output is formatted for readability in the
+        /// console.</remarks>
         public static void ViewLastTransaction()
         {
             if (!HasLastTransaction)
@@ -174,7 +183,13 @@ namespace QuickMart_Traders_Profit_Calculator
         #endregion
 
         #region Calculation Method
-
+        /// <summary>
+        /// Calculates and displays the profit or loss details for the most recent transaction.
+        /// </summary>
+        /// <remarks>This method determines whether the last transaction resulted in a profit, loss, or
+        /// break-even, and calculates the corresponding amount and profit margin percentage. If no transaction is
+        /// available, a message is displayed and no calculation is performed. The results are output to the console for
+        /// review.</remarks>
         public static void CalculateProfitOrLoss()
         {
             if (!HasLastTransaction)
@@ -217,7 +232,6 @@ namespace QuickMart_Traders_Profit_Calculator
             Console.WriteLine($"Profit Margin (%)   : {t.ProfitMarginPercent:F2}");
             Console.WriteLine("----------------------------------------------\n");
         }
-
         #endregion
     }
 }
