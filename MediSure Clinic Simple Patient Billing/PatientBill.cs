@@ -31,19 +31,16 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         //   - Print confirmation message
         #endregion
 
-        /// <summary>
-        /// Gets or sets the unique identifier for the bill.
-        /// </summary>
         #region Entity Properties 
-        public string BillId { get; set; }
-        public string PatientName { get; set; }
-        public bool HasInsurance { get; set; }
-        public decimal ConsultationFee { get; set; }
-        public decimal LabCharges { get; set; }
-        public decimal MedicineCharges { get; set; }
-        public decimal GrossAmount { get; set; }
-        public decimal DiscountAmount { get; set; }
-        public decimal FinalPayable { get; set; }
+        public string BillId { get; set; } //BillId: Unique identifier for the bill 
+        public string PatientName { get; set; } //PatientName: Name of the patient
+        public bool HasInsurance { get; set; } //HasInsurance: Indicates if the patient has insurance coverage
+        public decimal ConsultationFee { get; set; } //ConsultationFee: Fee for the medical consultation
+        public decimal LabCharges { get; set; } //LabCharges: Charges for laboratory tests
+        public decimal MedicineCharges { get; set; } //MedicineCharges: Charges for prescribed medicines
+        public decimal GrossAmount { get; set; } //GrossAmount: Total amount before discounts
+        public decimal DiscountAmount { get; set; } //DiscountAmount: Discount applied based on insurance status
+        public decimal FinalPayable { get; set; } //FinalPayable: Amount payable after applying discounts
         #endregion
 
         #region Static Storage
@@ -51,6 +48,7 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         public static bool HasLastBill; // Flag to indicate if a last bill exists
         #endregion
 
+        #region Create Bill
         /// <summary>
         /// Creates a new patient bill by prompting the user for billing details and displays the calculated amounts.
         /// </summary>
@@ -59,11 +57,8 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         /// discount if the patient is insured, and displays the final payable amount. The most recently created bill is
         /// stored for later retrieval. This method does not return a value and is intended for use in interactive
         /// console applications.</remarks>
-
-        #region Create Bill
         public static void CreateBill()
         {
-            
             // Read BillId from console
             Console.Write("Enter Bill Id: ");
             string BillId = Console.ReadLine();
@@ -111,19 +106,16 @@ namespace MediSure_Clinic_Simple_Patient_Billing
             Console.WriteLine($"Discount Amount: {bill.DiscountAmount:F2}");
             Console.WriteLine($"Final Payable: {bill.FinalPayable:F2}");
             Console.WriteLine("------------------------------------------------------------\n");
-
-            
         }
         #endregion
 
-
+        #region View Bill
         /// <summary>
         /// Displays the details of the most recently created bill in the console output.
         /// </summary>
         /// <remarks>If no bill has been created, a message is displayed indicating that no bill is
         /// available. This method does not return a value and is intended for use in console applications to review the
         /// last bill's information.</remarks>
-        #region View Bill
         public static void ViewLastBill()
         {
             // Check if a last bill exists
@@ -148,12 +140,12 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         }
         #endregion
 
+        #region Clear Bill
         /// <summary>
         /// Clears the information about the last processed bill.
         /// </summary>
         /// <remarks>After calling this method, the application will no longer retain any data related to
         /// the previous bill. Use this method to reset the bill state before processing a new bill.</remarks>
-        #region Clear Bill
         public static void ClearLastBill()
         {
             // Clear the last bill information
