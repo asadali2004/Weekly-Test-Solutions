@@ -12,6 +12,7 @@ namespace QuickMart_Traders_Profit_Calculator
     /// single-transaction scenarios and is not thread-safe.</remarks>
     public class SaleTransaction
     {
+        #region Plan and Pseudocode
         // Plan (pseudocode):
         // - Create/Register Method:
         //   - Read inputs from console: invoiceNo, customerName, itemName, quantity, purchaseAmount, sellingAmount
@@ -33,6 +34,7 @@ namespace QuickMart_Traders_Profit_Calculator
         //   - If HasLastTransaction false -> print message and return
         //   - Recompute profit/loss and margin on LastTransaction (same rules as above)
         //   - Print formatted transaction with rounded values
+        #endregion
 
         #region Properties
 
