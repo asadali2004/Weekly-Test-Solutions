@@ -1,9 +1,35 @@
 ﻿using System;
-
 namespace MediSure_Clinic_Simple_Patient_Billing
 {
+    /// <summary>
+    /// Represents a patient billing record, including details such as patient information, insurance status, individual
+    /// charges, and calculated billing amounts. Provides static methods for creating, viewing, and clearing the most
+    /// recent bill in a console application.
+    /// </summary>
+    /// <remarks>Use the static methods to interactively create a new bill, display the last bill, or clear
+    /// the stored bill information. The class maintains the most recently created bill for later retrieval and review.
+    /// Intended for use in interactive console-based billing scenarios.</remarks>
     public class PatientBill
     {
+        #region Plan and Pseudocode
+        //Plan (pseudocode):
+        // - Create Bill Methode:
+        //   - Read inputs from console: BillId, PatientName, HasInsurance(Y/N), ConsultationFee, LabCharges, MedicineCharges
+        //   - Validate: BillId not empty; ConsultationFee > 0; LabCharges >= 0; MedicineCharges >= 0
+        //   - Create PatientBill instance
+        //   - Compute:
+        //     - GrossAmount = ConsultationFee + LabCharges + MedicineCharges
+        //     - If HasInsurance = Y: DiscountAmount = GrossAmount * 10%; else DiscountAmount = 0
+        //     - FinalPayable = GrossAmount - DiscountAmount
+        //   - Store to LastBill and set HasLastBill = true
+        //   - Print formatted bill with values rounded to 2 decimals
+        // - View Bill Methode:
+        //   - If HasLastBill false -> print message and return
+        //   - Print LastBill in formatted output, rounding to 2 decimals
+        // - Clear Bill Methode:
+        //   - Clear LastBill and set HasLastBill = false
+        //   - Print confirmation message
+        #endregion
 
         /// <summary>
         /// Gets or sets the unique identifier for the bill.
@@ -33,10 +59,11 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         /// discount if the patient is insured, and displays the final payable amount. The most recently created bill is
         /// stored for later retrieval. This method does not return a value and is intended for use in interactive
         /// console applications.</remarks>
-        
+
+        #region Create Bill
         public static void CreateBill()
         {
-            #region Create Bill
+            
             // Read BillId from console
             Console.Write("Enter Bill Id: ");
             string BillId = Console.ReadLine();
@@ -85,25 +112,28 @@ namespace MediSure_Clinic_Simple_Patient_Billing
             Console.WriteLine($"Final Payable: {bill.FinalPayable:F2}");
             Console.WriteLine("------------------------------------------------------------\n");
 
-            #endregion
+            
         }
+        #endregion
 
 
-        #region View Bill
         /// <summary>
         /// Displays the details of the most recently created bill in the console output.
         /// </summary>
         /// <remarks>If no bill has been created, a message is displayed indicating that no bill is
         /// available. This method does not return a value and is intended for use in console applications to review the
         /// last bill's information.</remarks>
+        #region View Bill
         public static void ViewLastBill()
         {
+            // Check if a last bill exists
             if (!HasLastBill || LastBill == null)
             {
                 Console.WriteLine("No bill available. Please create a new bill first.");
                 return;
             }
 
+            // Display the last bill details
             Console.WriteLine("\n----------- Last Bill -----------");
             Console.WriteLine($"BillId: {LastBill.BillId}");
             Console.WriteLine($"Patient: {LastBill.PatientName}");
@@ -118,14 +148,15 @@ namespace MediSure_Clinic_Simple_Patient_Billing
         }
         #endregion
 
-        #region Clear Bill
         /// <summary>
         /// Clears the information about the last processed bill.
         /// </summary>
         /// <remarks>After calling this method, the application will no longer retain any data related to
         /// the previous bill. Use this method to reset the bill state before processing a new bill.</remarks>
+        #region Clear Bill
         public static void ClearLastBill()
         {
+            // Clear the last bill information
             LastBill = null;
             HasLastBill = false;
             Console.WriteLine("Last bill cleared.\n");

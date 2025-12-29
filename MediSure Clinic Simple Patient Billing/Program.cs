@@ -1,7 +1,9 @@
 ﻿using System;
 
+
 namespace MediSure_Clinic_Simple_Patient_Billing
 {
+
     /// <summary>
     /// Provides the entry point for the MediSure Clinic Billing application.
     /// </summary>
@@ -10,6 +12,7 @@ namespace MediSure_Clinic_Simple_Patient_Billing
     /// exit.</remarks>
     class Program
     {
+
         /// <summary>
         /// Serves as the entry point for the MediSure Clinic Billing application.
         /// </summary>
@@ -35,9 +38,7 @@ namespace MediSure_Clinic_Simple_Patient_Billing
                 string input = Console.ReadLine();
                 Console.WriteLine();
                 
-
                 #region Menu Handling
-
                 switch (input) 
                 {
                     case "1":
@@ -61,9 +62,8 @@ namespace MediSure_Clinic_Simple_Patient_Billing
                         Console.WriteLine("Invalid option. Please select between 1 and 4.\n");
                         break;
                 }
+                #endregion
             }
-            #endregion
-
         }
     }
 }
